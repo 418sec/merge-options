@@ -1,6 +1,6 @@
 {
   "name": "merge-options-es5",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ES5-Compatible Merge Option Objects",
   "license": "MIT",
   "repository": "glcheetham/merge-options",
