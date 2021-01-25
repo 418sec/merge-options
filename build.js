@@ -23,6 +23,10 @@ var getEnumerableOwnPropertyKeys = function getEnumerableOwnPropertyKeys(value) 
   var keys = [];
 
   for (var key in value) {
+    // prototype pollution mitigation
+    if(key.includes('__proto__') || key.includes('constructor') || key.includes('prototype')){
+      return keys;
+    }
     if (hasOwnProperty.call(value, key)) {
       keys.push(key);
     }
